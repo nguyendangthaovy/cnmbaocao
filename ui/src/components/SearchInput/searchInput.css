@@ -1,0 +1,123 @@
+.modalAddFriend {
+    height: 500px;
+    width: 400px;
+    padding: 0 10px !important;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.modalAddGroup {
+    min-height: 400px;
+    height: 750px;
+    width: 590px;
+    padding: 0 10px !important;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modalAddFriendHeader {
+    border-bottom: 1px solid #ccc;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modalAddFriendHeader > p {
+    font-weight: 600;
+    font-size: 17px;
+    color: black !important;
+    margin: 0;
+    padding: 0;
+}
+.modalAddFriendHeader > button {
+    border-radius: 50%;
+    border: unset;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+}
+.modalAddFriendHeader > button:hover {
+    background-color: rgb(230, 230, 230);
+}
+.modalAddFriendInput {
+    border-bottom: 1px solid #ccc;
+    height: 50px;
+    display: flex;
+
+    align-items: center;
+}
+.modalSearchInput {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.modalSearchInput span,
+.modalAddFriendInput > span {
+    padding-left: 10px;
+}
+
+.modalSearchInput input,
+.modalAddFriendInput > input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.modalAddFriendBody {
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+}
+
+.modalAddFriendFooter {
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.modalAddFriendFooter button {
+    margin: 0 5px;
+}
+
+.friendItemInvite {
+    display: flex;
+    width: 336px;
+
+    align-items: center;
+}
+
+.friendItemInfo {
+    margin: 0;
+    padding-left: 10px;
+}
+
+.groupRadioButton {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 10px 0;
+}
+
+.MuiGrid-root {
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+    background-color: white;
+}
+
+.modalAddGroupResult {
+    width: 100%;
+}
+
+.MuiGrid-root.MuiGrid-item {
+    padding: 0 !important;
+}
+.MuiCardHeader-root {
+    width: 240px;
+}
+.MuiList-root {
+    background-color: white;
+}

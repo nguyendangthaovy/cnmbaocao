@@ -1,0 +1,8 @@
+#long-menu .MuiList-root {
+    display: flex;
+    flex-direction: column;
+}
+
+#long-menu .optionItem {
+    padding-left: 20px;
+}

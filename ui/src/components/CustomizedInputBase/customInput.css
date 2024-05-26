@@ -1,0 +1,9 @@
+.wrapInput {
+    position: relative;
+}
+
+.EmojiPickerReact {
+    position: absolute !important;
+    bottom: 60px;
+    right: 90px;
+}

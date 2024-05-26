@@ -1,0 +1,69 @@
+.loginContainer {
+    background-image: url('../../../public/background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Auth-form {
+    width: 500px;
+    box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.Auth-form-content {
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+.Auth-form-title {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 50px;
+    color: rgb(1, 48, 235);
+    font-weight: 800;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(34, 34, 34);
+    width: 100%;
+    text-align: start;
+}
+
+.option-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.zone-error {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin: 5px 0;
+    padding-left: 5px;
+}
+
+.zone-error p {
+    font-size: small;
+    font-style: italic;
+}
+
+.catchError.active {
+    color: rgb(0, 255, 0);
+}
+
+.catchError.hide {
+    display: none;
+}
+
+.catchError.error {
+    color: red;
+}

@@ -1,0 +1,31 @@
+
+.selectorTabList {
+    display: flex;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.selectorTab {
+    border: unset;
+    font-size: 16px;
+    font-weight: bolder;
+    color: rgb(176, 174, 174);
+    background-color: white;
+    padding-bottom: 10px;
+   
+}
+.selectorTab:hover {
+
+    border-bottom: 2px rgb(50, 124, 177) solid;
+    color: rgb(50, 124, 177);
+    padding-bottom: 8px;
+}
+
+.tab-all{
+    margin-left: 15px;
+}
+.tab-invit{
+    margin-right: 15px;
+}

@@ -1,0 +1,55 @@
+.listItem {
+    cursor: pointer !important;
+}
+.group {
+    flex-wrap: wrap;
+    width: 56px;
+    height: 55px;
+    position: relative;
+    justify-content: start;
+    margin-left: 2px;
+}
+
+.group div:first-child {
+    width: 25px;
+    height: 25px;
+    z-index: 1;
+}
+
+.iconAvatar {
+    height: 25px !important;
+    width: 25px !important;
+}
+.iconAvatar:nth-child(4) {
+    position: absolute;
+    bottom: 2px;
+    left: 13px;
+    z-index: 2;
+}
+.iconAvatar:nth-child(3) {
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    z-index: 2;
+}
+
+.textContent > p {
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.listItem:hover .moreIcon {
+    color: black;
+    display: block !important;
+}
+
+.moreIcon {
+    position: absolute;
+    right: 20px;
+    top: 35%;
+    z-index: 2;
+    display: none !important;
+    color: #ccc;
+}

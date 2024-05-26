@@ -1,0 +1,334 @@
+.wrapChatting {
+    flex: 7;
+    display: flex;
+    overflow: hidden;
+}
+
+.chatting {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+/* ::-webkit-scrollbar {
+    width: 10px;
+  } */
+/* info css */
+.infoConversation {
+    
+    border-left: 1px solid #ccc;
+    background-color: #fff;
+    
+ 
+}
+
+.infoContainer.hide {
+    width: 0px;
+    
+}
+
+.titleInfo {
+    font-size: 18px;
+    height: 67px;
+    align-items: center;
+    line-height: 67px;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+.infoContainer h5 {
+    background-color: #fff;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+.infoContainer {
+    width: 350px;
+    max-height: 750px;
+    -webkit-transition: width 0.3s ease-in-out;
+    -moz-transition: width 0.3s ease-in-out;
+    -o-transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
+}
+.wrapInfoAvatar {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+.btnEditName {
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+.btnEditName:hover {
+    background-color: rgb(233, 231, 231);
+}
+.infoGroupCommon {
+    margin: 10px 0;
+    background-color: #fff;
+    min-height: 50px;
+    cursor: pointer;
+}
+
+.infoGroupCommon p {
+    text-align: start;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.infoMedia,
+.infoFile {
+    min-height: 50px;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.infoMedia h5,
+.infoFile h5 {
+    padding-top: 10px;
+    padding-left: 10px;
+    text-align: start;
+    font-size: 16px;
+    color: #001a33;
+}
+/* end info */
+.headerUser {
+    height: 68px;
+    border-bottom: 1px solid #ccc;
+}
+
+.roomChat {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f7f7;
+    position: relative;
+}
+.chatAction{
+    position: relative;
+}
+.messageUser {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 10px;
+}
+
+.leftUser {
+    display: flex;
+    user-select: text;
+    min-width: 32px;
+    max-width: calc(100% - 38px);
+    align-self: flex-start;
+}
+
+.rightUser {
+    display: flex;
+    user-select: text;
+    min-width: 32px;
+    max-width: calc(100% - 38px);
+    align-self: flex-end;
+}
+
+.leftUser .wrapperMessage,
+.rightUser .wrapperMessage {
+    display: flex;
+
+    padding: 10px;
+}
+
+.content {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px 13px;
+    min-width: 84px;
+    text-align: left;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    overflow-wrap: break-word;
+    contain: style;
+    word-break: break-word;
+}
+.content.messageDelete {
+    background-color: #aaa;
+}
+
+.messageDelete .contentDeleted {
+    color: #fff;
+}
+
+.messageName {
+    display: none;
+}
+.messageName.isMessageGroup {
+    display: block;
+}
+
+.rightUser .messageUser {
+    order: 2;
+}
+
+.rightUser .content {
+    order: 1;
+}
+
+.sendOption {
+    height: 47px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+}
+
+.btnOption {
+    border-radius: 3px !important;
+    width: 50px !important;
+    height: 50px !important;
+    padding: 0 !important;
+}
+
+.sendMessage {
+    height: 57px;
+    display: flex;
+    align-items: center;
+}
+
+.imageMessage,
+.videoMessage {
+    height: auto;
+    width: auto;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.content.notifyMessage {
+    background-color: #aaa;
+    border-radius: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    color: white;
+}
+
+.groupImage {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: start;
+    /* width: 620px; */
+}
+
+.groupImage .imageMessage {
+    height: auto;
+    width: auto;
+    max-width: 200px;
+    max-height: 200px;
+    border: 2px solid #ccc;
+}
+/* dot elastic */
+.typing-message {
+    text-align: start;
+    padding-left: 15px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+
+}
+.hide-type{
+    display: none;
+}
+
+.snippet {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+.dot-flashing {
+    position: relative;
+    width: 5px;
+    height: 5px;
+    border-radius: 2.5px;
+    background-color: #9880ff;
+    color: #9880ff;
+    animation: dotFlashing 1s infinite linear alternate;
+    animation-delay: 0.5s;
+}
+
+.dot-flashing::before,
+.dot-flashing::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+}
+
+.dot-flashing::before {
+    left: -10px;
+    width: 5px;
+    height: 5px;
+    border-radius: 2.5px;
+    background-color: #9880ff;
+    color: #9880ff;
+    animation: dotFlashing 1s infinite alternate;
+    animation-delay: 0s;
+}
+
+.dot-flashing::after {
+    left: 10px;
+    width: 5px;
+    height: 5px;
+    border-radius: 2.5px;
+    background-color: #9880ff;
+    color: #9880ff;
+    animation: dotFlashing 1s infinite alternate;
+    animation-delay: 1s;
+}
+
+@keyframes dotFlashing {
+    0% {
+        background-color: #9880ff;
+    }
+    50%,
+    100% {
+        background-color: #ebe6ff;
+    }
+}
+
+/* dot member */
+
+.MuiList-root {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.MuiList-root > li {
+    text-align: start;
+    align-self: flex-start;
+}
+
+.listMember, .bao-info-pic {
+    max-height: 350px;
+}
+
+.containerMembers {
+    display: none;
+}
+
+.containerMembers.showMembers {
+    display: block;
+}
+.bao-info-pic{
+    display:none;
+}
+.bao-info-pic.showPics{
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+    flex-wrap:wrap-reverse
+}

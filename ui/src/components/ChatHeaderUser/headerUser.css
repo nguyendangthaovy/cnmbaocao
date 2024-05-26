@@ -1,0 +1,28 @@
+.conversation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conversationInfor {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    height: 68px;
+}
+.conversationAvatar {
+    margin-right: 15px;
+}
+/* .conversationInfor{
+    justify-self: flex-start;
+} */
+.conversationName .isOnline {
+    font-size: 14px;
+    color: #888;
+}
+.conversationName .isOnline,
+.conversationName .name {
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: left;
+}

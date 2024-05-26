@@ -1,0 +1,33 @@
+.sideNavbar {
+    background-color: #3989ff;
+    width: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.icon {
+    color: white;
+    font-size: 3.5rem !important;
+    height: 60px;
+    padding: 10px 0;
+    width: 65px !important;
+}
+.icon:hover {
+    background-color: #1873fbeb;
+    cursor: pointer;
+}
+
+.mid-icon {
+    flex: 8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.icon.active {
+    background-color: #0068ff;
+}
